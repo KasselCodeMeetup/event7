@@ -1,0 +1,25 @@
+{
+  "name": "googleGlass",
+  "version": "0.0.0",
+  "description": "OK Glass - Hands on mit der Google Glass",
+  "main": "index.html",
+  "authors": [
+    "Sandro Kock"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reveal.js": "~3.1.0",
+    "bootstrap-sass": "twbs/bootstrap-sass#~3.3.4",
+    "polymer": "Polymer/polymer#^1.0.0",
+    "iron-icon": "PolymerElements/iron-icon#^1.0.0",
+    "social-post-icons": "vanxrice/social-post-icons#~0.2.0",
+    "google-youtube": "GoogleWebComponents/google-youtube#~1.1.0"
+  }
+}

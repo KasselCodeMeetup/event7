@@ -1,0 +1,118 @@
+// Core variables and mixins
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Reset and dependencies
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+
+// Core CSS
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+
+@import "../bower_components/reveal.js/css/reveal";
+
+
+// Default mixins and settings -----------------
+@import "../bower_components/reveal.js/css/theme/template/mixins";
+@import "../bower_components/reveal.js/css/theme/template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+//@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+//@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic);
+
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Roboto', 'Noto', sans-serif;
+$mainColor: #757575;
+$headingFont: 'Roboto', 'Noto', 'sans-serif';
+$headingColor: #757575;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #FFF;
+$linkColor: #0097A7;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+// Theme template ------------------------------
+@import "../bower_components/reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+
+.white {
+  color: #FFF!important;
+}
+
+.blue {
+ color: $linkColor!important;
+}
+
+.dp48 {
+  width: 48px;
+  height: 48px;
+}
+
+.reveal {
+  .progress {
+    background-color: $linkColor;
+    height: 15px;
+
+    span {
+      background-color: #FFF;
+    }
+  }
+  section {
+    img {
+      border: 0px;
+      box-shadow: none;
+    }
+  }
+  .small {
+    font-size: 0.5em;
+  }
+  .small-list {
+    font-size: 0.5em;
+    li {
+      list-style: disc;
+    }
+    li.none {
+      list-style: none;
+    }
+    a {
+      text-decoration: underline;
+    }
+
+  }
+
+}
+
+#time {
+  span {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+}
+
+@keyframes fade {
+  0%   {color: #fff;}
+  49%  {color: #fff;}
+  50%  {color: #00BCD4;}
+  100% {color: #00BCD4;}
+}
+
+ul li{
+  list-style: none;
+}
+
+ul.list li{
+  list-style: disc;
+}
+
+div.left {
+  text-align: left;
+}
+
+
+
